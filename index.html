@@ -1,33 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Player</title>
-    <link rel="stylesheet" href="css/music.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/music2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="base"></div>
     <div id="wrappar">
+      <div id="head">
+        <p id="unusual">Unusualperson</p>
+        <i id="home" class="fa-solid fa-house"></i>
+        <i id="dot" class="fa-solid fa-ellipsis"></i>
+      </div>
+      <div id="slide">
+        <ul id="list">
+          <li onclick="listplay(0)" id="s0"></li>
+          <li onclick="listplay(1)" id="s1"></li>
+          <li onclick="listplay(2)" id="s2"></li>
+          <li onclick="listplay(3)" id="s3"></li>
+          <li onclick="listplay(4)" id="s4"></li>
+          <li onclick="listplay(5)" id="s5"></li>
+          <li onclick="listplay(6)" id="s6"></li>
+          <li onclick="listplay(7)" id="s7"></li>
+          <li onclick="listplay(8)" id="s8"></li>
+          <li onclick="listplay(9)" id="s9"></li>
+          <li onclick="listplay(10)" id="s10"></li>
+          <li onclick="listplay(11)" id="s11"></li>
+          <li onclick="listplay(12)" id="s12"></li>
+          <li onclick="listplay(13)" id="s13"></li>
+          <li onclick="listplay(14)" id="s14"></li>
+          <li onclick="listplay(15)" id="s15"></li>
+          <li onclick="listplay(16)" id="s16"></li>
+          <li onclick="listplay(17)" id="s17"></li>
+          <li onclick="listplay(18)" id="s18"></li>
+        </ul>
+      </div>
+      <div id="page1">
         <h2 id="title"></h2>
         <p id="singer"></p>
+
         <div id="box">
-            <img id="moveing" src="">
+          <img id="moveing" src="" />
         </div>
+
+        <div id="progress">
+          <div id="time">
+            <span id="cur">00:00</span>
+            <span id="total"></span>
+          </div>
+          <div id="border">
+            <div id="line"></div>
+          </div>
+        </div>
+
         <div id="con">
-            <i id="pre" class="fa-solid fa-backward" title="Previous song"></i>
-            <i id="mid" class="fa-solid fa-play" ></i>
-            <i id="next" class="fa-solid fa-forward" title="Next song"></i>
+          <i id="pre" class="fa-solid fa-backward" title="Previous song"></i>
+          <i id="mid" class="fa-solid fa-play"></i>
+          <i id="next" class="fa-solid fa-forward" title="Next song"></i>
         </div>
+
         <audio id="audio" src=""></audio>
         <div id="ground"></div>
+      </div>
     </div>
 
-    <script src="js/music.js"></script>
-</body>
+    <script src="js/music2.js"></script>
+  </body>
 </html>
